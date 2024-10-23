@@ -1,1 +1,3 @@
-# forward_automatic_differentiation
+This code implements automatic differentiation (FAD) using jet expansion to compute the value of a funtion as well as its first and second derivatives with respect to multiple variables.
+The `Jet` class represents a multivariate Taylor expansion of a function, storin gthe function's value, gradients, and Hessians, as well as provides operator overloading for basic arithmetic operations and mathematical functions.
+This use of operator overloading allows the propagation of derivatives seamlessly during arithmetic operations and function evaluations. This approach is optimal for calculating derivatives of complex functions in a numerically stable and computationally efficient way by avoiding symbolic differentiation's complexity and numerical differentiation's inacurracies, such as finite differences.
